@@ -8,7 +8,7 @@ private_key = rsa.generate_private_key(
     
 )
 public_key = private_key.public_key()
-message = b"You used to turn your code into little pieces of love for me. I didn't understand how precious that was then. Now i do. I love you , and if there's a chance for us someday, i'd want it.I'm really sorry i hurt you trying to protect myself of which it turns out i was protectimg myself from nothing. I will always be here for you.I LOVE YOU."
+message = b"Sometimes confidence is not only seen when you do big things, it's when you have the courage to not let the past dictate your present and future. Is when you are so brave to overcome the darkness within you.The thing that i now value more than anything else is TIME. They say time changes but time continues to move if the person does not conquer the negative or draining person inside them. Things happen and if don't allow yourself to grow you will always be stuck. After all,,,,, LIFE MUST GO ON"
 
 # encrypt the message using the public key RSA-OAEP
 ciphertext = public_key.encrypt(
