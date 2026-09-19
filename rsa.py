@@ -4,7 +4,7 @@ from cryptography.hazmat.primitives import hashes
 # generate rsa key pair
 private_key = rsa.generate_private_key(
     public_exponent=65537,
-    key_size=4096,
+    key_size=8192,
     
 )
 public_key = private_key.public_key()
@@ -38,3 +38,6 @@ print("--- DECRYPTED MESSAGE ---")
 print(decrypted_message.decode('utf-8'))
 print("--- ORIGINAL MESSAGE ---")
 print(message.decode('utf-8'))
+
+
+#key_size is the total number of bits that make up a cryptography key. The larger the key size, the more secure the key is, but it also requires more computational resources to generate and use. In this case, a key size of 4 bits is extremely small and insecure for any practical use. For RSA, a minimum key size of 2048 bits is recommended for security.
